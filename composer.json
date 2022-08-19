@@ -1,0 +1,49 @@
+{
+    "name": "filtrs/binary",
+    "type": "library",
+    "description": "",
+    "keywords": [
+        "FiltrBinary",
+        "Binary"
+    ],
+    "homepage": "https://github.com/FiltrBinary/Binary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Serg",
+            "email": "r1al1t@mail.ru",
+            "homepage": "https://github.com/rialit",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=8.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FiltrBin\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Filtrs\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
