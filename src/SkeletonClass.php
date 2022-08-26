@@ -26,4 +26,6 @@ class SkeletonClass
     {
         return $phrase;
     }
+
+
 }

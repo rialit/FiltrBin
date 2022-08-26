@@ -3,58 +3,81 @@
 
 require_once "../vendor/autoload.php";
 
-use FiltrBin\Founder\AddingMas;
+use FiltrBin\FileMeneger\SpaceMeneger;
 
+use FiltrBin\SkeletonClass;
 
 
 echo "<pre>";
 
 
-$arr = [];
-
-for ($i=0; $i < 1000; $i++) { 
-	$arr[] = rand(1,100);
-}
-
-var_dump($arr);
-
-asort($arr);
-
-var_dump($arr);
 
 
-// AddingMas::clear();
+// $space = new SpaceMeneger();
 
-// AddingMas::addInFileMas(56);
+// $space->add([2,3,5,6,7,9]);
+// $space->del([7,3]);
 
+// $res = $space->foundPart(3);
 
-// $num1 = 234;
-// $num2 = 453;
-
-// $str1 = pack("I", $num1);
-// $str2 = pack("I", $num2);
-
-// $resPack = $str1 > $str2;
-
-// $resNum = $num1 > $num2;
+// var_dump($space);
 
 
-// var_dump($str1, $str2);
-// var_dump($num1, $num2);
+// $file = new File("puth/to/file");
+
+/**
+ *      example
+ *  kats = [    
+ *      
+ *          name => string(300) ~ 75
+ *          id   => int(32)     ~ 1
+ *          ....
+ * 
+ */
+
+// reserv 
+
+$start  = 1;
+$end    = 100;
+
+// create Kat
+
+// if($file->existVal("header")){
+
+//     $header = $file->createJson([]);
+//     $header->addValName("header");
+
+// } else {
+//     $header = $file->getVal("header");
+// }
+
+// $headerJson = $header->getVal();
+
+// // edit $headerJson as object ....
+
+// $header->save($headerJson);
+
+// $arr = $file->createArrNum([1,2,3,4]);
+
+// $arrey = $arr->getVal();
+
+// edit array as array ...
+
+// $arr->save($arrey);
 
 
 
-// $res = AddingMas::readAll();
 
-// // var_dump($res);
 
-// $count = $res[1];
 
-// $arr = array_slice($res, 1);
 
-// var_dump($count);
+// $file->reserv($start, $end);
 
-// var_dump($arr);
+// $file->getVal("header");
+// $file->getArrayPos(12);
+// $ar = $file->getArrayPos(12);
+// $ar->found(12);
+// $ar->found(12);
 
 
 
